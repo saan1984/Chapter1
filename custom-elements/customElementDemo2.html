@@ -9,7 +9,7 @@
             writable : true
         });
         objectPrototype.createdCallback=function(){
-            this.innerText=this.title;
+            this.innerText=this.getAttribute('title');
         };
         var  myNameElement = document.registerElement("my-name",{
             prototype:objectPrototype
